@@ -45,7 +45,7 @@ main section {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
 }
 
@@ -54,6 +54,8 @@ main article {
     flex-shrink: 1;
     flex-basis: 200px;
     text-align: center;
+
+    max-width: 450px;
 }
 
 main img {
@@ -63,17 +65,32 @@ main img {
 
 
 @media (min-width: 400px) and (max-width: 670px) {
+    
+    header {
+        align-items: flex-start;
+    }
+
+    header > a {
+        font-size: 30px;
+    }
+
+
+    header ul {
+        flex-direction: column;
+        gap: 2px;
+        background-color: gray;
+    }
+
+
     main section {
         width: 90%;
     }
 
-    header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    header ul {
-        flex-wrap: wrap;
+    main h3 {
+        height: 100px;
+        display: flex;
         justify-content: center;
+        align-items: center;
     }
+    
 }
