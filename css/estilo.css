@@ -55,7 +55,7 @@ main article {
     flex-basis: 200px;
     text-align: center;
 
-    max-width: 450px;
+    max-width: 472px;
 }
 
 main img {
@@ -64,7 +64,7 @@ main img {
 }
 
 
-@media (min-width: 400px) and (max-width: 670px) {
+@media (min-width: 200px) and (max-width: 670px) {
     
     header {
         align-items: flex-start;
